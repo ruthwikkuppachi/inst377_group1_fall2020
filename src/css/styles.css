@@ -61,6 +61,17 @@ h1{
 	top: -20px;
 	border-radius:12px;
 }
+.topnav .search-container button {
+	float: right;
+	padding: 6px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+  }
+  
 nav ul{
 	list-style-type: none;
 	margin-top: 30px;
