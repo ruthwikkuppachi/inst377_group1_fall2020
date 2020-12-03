@@ -46,7 +46,7 @@ Header{
 .signin{
 	float: right;
 	color:white;
-	background-color:#308449;
+	background-color:#3a37e7;
 	font-size: 20px;
 	margin-top: 0px;
 	margin-right: 20px;
@@ -59,7 +59,7 @@ nav ul{
 	margin-top: 30px;
 	padding: 0;
 	overflow: hidden;
-	background-color: #308449;
+	background-color: #2f2cf0;
 }
 
 nav ul li{
@@ -76,12 +76,13 @@ nav ul li a {
 }
 
 nav ul li a:hover:not(.active){
-	background-color: #00FF3C;
+	background-color: #0f0f11;
+}
 	
 }
 
 .active{
-	background-color: #F6D600
+	background-color: #0f0e06
 }
 
 
@@ -114,12 +115,12 @@ footer{
 	padding: 10px;
 	margin-top: 20px;
 	color: white;
-	background-color:#1F3F01;
+	background-color:#211ef3;
 	text-align: center;
 }
 
 .fa-facebook {
-  background: #3B5998;
+  background: #2760dd;
   color: white;
 }
 

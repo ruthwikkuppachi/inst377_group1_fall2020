@@ -53,7 +53,7 @@ h1{
 .signin{
 	float: right;
 	color:white;
-	background-color:#308449;
+	background-color:#6355e4;
 	font-size: 20px;
 	margin-top: 0px;
 	margin-right: 20px;
@@ -66,7 +66,7 @@ nav ul{
 	margin-top: 30px;
 	padding: 0;
 	overflow: hidden;
-	background-color: #308449;
+	background-color: #3538f1;
 }
 
 nav ul li{
@@ -83,12 +83,12 @@ nav ul li a {
 }
 
 nav ul li a:hover:not(.active){
-	background-color: #00FF3C;
+	background-color: #393b3a;
 	
 }
 
 .active{
-	background-color: #F6D600
+	background-color: #0c0c0b
 }
 
 .home-img{
@@ -169,7 +169,7 @@ footer{
 	padding: 10px;
 	margin-top: 20px;
 	color: white;
-	background-color:#1F3F01;
+	background-color:#4c3ae9;
 	text-align: center;
 }
 .fa-facebook {
