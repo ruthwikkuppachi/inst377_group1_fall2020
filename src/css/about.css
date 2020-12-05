@@ -16,7 +16,7 @@ nav{
 	height: 80px;
 	width: 100%;
 }
-Header{
+header{
 	
 	display: flex;
   	flex-direction: row;
@@ -26,13 +26,12 @@ Header{
 	color: black;
 	font: 15px sans-serif;
 	
-	}
-	
+}
 .wrapper {
 	display: flex;
 				  
 	align-items: center;
-	}
+}
 .logo-img{
 
 	float: left;
@@ -104,26 +103,113 @@ nav ul li a:hover:not(.active){
 	/*background-size: cover;*/
 	
 }
-
-/* Latest articles line */
-
-.container{
-	background-color: #55ACEE;
+section{
+	padding: 10rem 0;
+	background-color: #fff;
 }
-#articles h1{
+
+.heading{
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	letter-spacing: 3px;
+	margin-right: 3px;
+	margin-bottom: 5rem;
 	text-align: center;
-	font: 18px bold times new roman;
+	color: #333;
+	position: relative;
 }
 
-.container h2{
-	text-align: center;
-	font: 18px bold times new roman;
+.card-wrapper{
+	display:flex;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
 }
 
-#articles2 h2{
-	text-align: center;
-	font: 18px bold times new roman;
+.card{
+	width: 32rem;
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem 0;
+	box-shadow: .5 rem .5rem 15 rem rgba(0,0,0,0.9);
 }
+
+.card h1{
+	font-size: 2rem;
+	color: #333;
+	margin: 1.5rem 0;
+}
+
+.about{
+	font-size: 1rem;
+	margin: 1rem 0;
+	text-align: center;
+	color: #333;
+}
+
+@media screen and (min-width: 700px){
+	.card-wrapper{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.card{
+		margin: 2rem;
+		transition: transform .5s;
+	}
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	.card:nth-child(1){
+		animation: fadeIn .5s .5s backwards;
+	}
+	.card:nth-child(2){
+		animation: fadeIn .5s 1s backwards;
+	}
+	.card:nth-child(3){
+		animation: fadeIn .5s 1.5s backwards;
+	}
+	.card:hover{
+		transform: scale(1.05);
+	}
+}
+/*
+.card {
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 210px 210px 80px;
+	grid-template-areas: "image" "text";
+  
+	border-radius: 18px;
+	background: whitesmoke;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+	font-family: roboto;
+	text-align: center;
+	
+  
+	transition: 0.5s ease;
+	cursor: pointer;
+	margin:30px;
+  }
+  .card-image {
+	grid-area: image;
+	background: url("img1.jpg");
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+*/
+
 /* Footer */
 footer{
 	padding: 10px;
