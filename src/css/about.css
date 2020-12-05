@@ -103,21 +103,13 @@ nav ul li a:hover:not(.active){
 	/*background-size: cover;*/
 	
 }
+/* Card Information */
 section{
-	padding: 10rem 0;
+	padding: 2rem 0;
 	background-color: #fff;
 }
 
-.heading{
-	text-transform: uppercase;
-	font-size: 3.5rem;
-	letter-spacing: 3px;
-	margin-right: 3px;
-	margin-bottom: 5rem;
-	text-align: center;
-	color: #333;
-	position: relative;
-}
+
 
 .card-wrapper{
 	display:flex;
@@ -152,7 +144,7 @@ section{
 
 @media screen and (min-width: 700px){
 	.card-wrapper{
-		flex-direction: row;
+		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
@@ -184,32 +176,6 @@ section{
 		transform: scale(1.05);
 	}
 }
-/*
-.card {
-	display: grid;
-	grid-template-columns: 300px;
-	grid-template-rows: 210px 210px 80px;
-	grid-template-areas: "image" "text";
-  
-	border-radius: 18px;
-	background: whitesmoke;
-	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-	font-family: roboto;
-	text-align: center;
-	
-  
-	transition: 0.5s ease;
-	cursor: pointer;
-	margin:30px;
-  }
-  .card-image {
-	grid-area: image;
-	background: url("img1.jpg");
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	background-size: cover;
-*/
-
 /* Footer */
 footer{
 	padding: 10px;
