@@ -17,13 +17,22 @@ nav{
 	width: 100%;
 }
 Header{
-
+	
+	display: flex;
+  	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
 	background: white;
 	color: black;
 	font: 15px sans-serif;
 	
 	}
-
+	
+.wrapper {
+	display: flex;
+				  
+	align-items: center;
+	}
 .logo-img{
 
 	float: left;

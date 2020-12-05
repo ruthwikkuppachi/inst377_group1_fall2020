@@ -17,11 +17,21 @@ nav{
 	width: 100%;
 }
 Header{
-
+	
+	display: flex;
+  	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
 	background: white;
 	color: black;
 	font: 15px sans-serif;
 	
+	}
+	
+.wrapper {
+	display: flex;
+		  
+	align-items: center;
 	}
 
 .logo-img{
@@ -84,6 +94,8 @@ nav ul li a:hover:not(.active){
 	background-color: #111110
 }
 .content{
+	display: flex;
+	flex-direction: row;
 	display: inline-block;
 	margin-top: 100px;
 }
