@@ -108,6 +108,7 @@ nav ul li a:hover:not(.active){
 /* Latest articles line */
 #articles h1{
 	text-align: center;
+	font: 18px bold times new roman;
 }
 
 #articles1 h2{
