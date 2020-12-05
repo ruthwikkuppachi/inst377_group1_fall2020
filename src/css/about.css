@@ -87,8 +87,8 @@ nav ul li a {
 nav ul li a:hover:not(.active){
 	background-color: #0f0f11;
 }
-	
-}
+
+
 
 .active{
 	background-color: #0f0e06
@@ -106,12 +106,16 @@ nav ul li a:hover:not(.active){
 }
 
 /* Latest articles line */
+
+.container{
+	background-color: #55ACEE;
+}
 #articles h1{
 	text-align: center;
 	font: 18px bold times new roman;
 }
 
-#articles1 h2{
+.container h2{
 	text-align: center;
 	font: 18px bold times new roman;
 }
