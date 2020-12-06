@@ -9,6 +9,7 @@
 body{
 	font-family: montserrat;
 	overflow-x:hidden;
+	background: url("background.jpg");
 	}
 
 nav{
