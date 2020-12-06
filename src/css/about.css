@@ -127,6 +127,7 @@ section{
 	justify-content: center;
 	margin: 2rem 0;
 	box-shadow: .5 rem .5rem 15 rem rgba(0,0,0,0.9);
+	padding: 10px;
 }
 
 .card h1{
