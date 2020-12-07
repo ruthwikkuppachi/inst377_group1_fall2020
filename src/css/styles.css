@@ -6,11 +6,6 @@
 	box-sizing: border-box;
 }
 
-body{
-	font-family: montserrat;
-	overflow-x:hidden;
-	}
-
 nav{
 	background: white;
 	height: 80px;
@@ -125,6 +120,7 @@ nav ul li a:hover:not(.active){
 	margin-top: 100px;
 	position: relative;
 	top: -80px;
+	padding: 40px;
 }
 
 
