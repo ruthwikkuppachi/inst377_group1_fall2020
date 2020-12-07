@@ -21,7 +21,7 @@ Header{
 	display: flex;
   	flex-direction: row;
 	flex-wrap: wrap;
-	background: white;
+	background: rgb(255, 255, 255);
 	color: black;
 	font: 15px sans-serif;
 	
@@ -53,7 +53,7 @@ h1{
 	position: relative;
 	left: 10px;
 	top: 10px;
-	color: #308449;
+	color: #010502;
 	font-size: 35px;
 }
 
@@ -62,7 +62,7 @@ h1{
 .signin{
 	float: right;
 	color:white;
-	background-color:#6355e4;
+	background-color:#3134cc;
 	font-size: 20px;
 	margin-top: 0px;
 	margin-right: 20px;
@@ -72,7 +72,7 @@ h1{
 }
 .topnav .search-container button {
 	float: right;
-	padding: 6px;
+	padding: 10px;
 	margin-top: 8px;
 	margin-right: 16px;
 	background: #ddd;
@@ -86,7 +86,7 @@ nav ul{
 	margin-top: 30px;
 	padding: 0;
 	overflow: hidden;
-	background-color: #3538f1;
+	background-color: #3134cc;
 }
 
 nav ul li{
@@ -95,7 +95,7 @@ nav ul li{
 
 nav ul li a {
 	display: block;
-	color:white;
+	color:rgb(255, 255, 255);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -177,7 +177,7 @@ nav ul li a:hover:not(.active){
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -191,7 +191,7 @@ footer{
 	padding: 10px;
 	margin-top: 20px;
 	color: white;
-	background-color:#4c3ae9;
+	background-color:#3134cc;
 	text-align: center;
 }
 .fa-facebook {
