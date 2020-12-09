@@ -19,6 +19,8 @@ Header{
 	background: rgb(255, 255, 255);
 	color: black;
 	font: 15px sans-serif;
+	justify-content: center;
+	align-content: center;
 	
 	}
 	
@@ -30,8 +32,6 @@ Header{
 .logo-img{
 
 	float: left;
-	padding-top: 0px;
-	padding-left: 0px;
 	width: 6%;
 	height: 8%;	
 	position: relative;
@@ -50,6 +50,7 @@ h1{
 	top: 10px;
 	color: #010502;
 	font-size: 35px;
+	padding-top: 10px;
 }
 
 
@@ -59,12 +60,12 @@ h1{
 	color:white;
 	background-color:#3134cc;
 	font-size: 20px;
-	margin-top: 0px;
 	margin-right: 20px;
 	position: relative;
 	top: -20px;
 	border-radius:12px;
 }
+
 .topnav .search-container button {
 	float: right;
 	padding: 10px;
@@ -79,19 +80,19 @@ h1{
 nav ul{
 	list-style-type: none;
 	margin-top: 30px;
-	padding: 0;
+	padding: 15px;
 	overflow: hidden;
 	background-color: #3134cc;
+	flex: 2;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 }
 
-nav ul li{
-	float: left;
-		}
-
 nav ul li a {
-	display: block;
+	display: inline;
 	color:rgb(255, 255, 255);
-	text-align: center;
+	text-align: justify;
 	padding: 14px 16px;
 	text-decoration: none;
 	text-transform: uppercase;
