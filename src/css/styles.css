@@ -1,48 +1,40 @@
-*{
-	padding:0;
+* {
+	padding: 0;
 	margin: 0;
 	text-decoration: none;
 	list-style: none;
 	box-sizing: border-box;
 }
 
-nav{
+nav {
 	background: white;
 	height: 80px;
 	width: 100%;
 }
-Header{
-	
+
+header {
 	display: flex;
   	flex-direction: row;
 	flex-wrap: wrap;
-	background: rgb(255, 255, 255);
+	background: white;
 	color: black;
 	font: 15px sans-serif;
 	justify-content: center;
 	align-content: center;
-	
 	}
 	
 .wrapper {
 	display: flex;
-	  
 	align-items: center;
 	}
-.logo-img{
 
+.logo-img{
 	float: left;
 	width: 6%;
 	height: 8%;	
 	position: relative;
 	top: 5px;
 }
-
-h1{
-	
-	font-size: 30px;
-}
-
 
 .logo {
 	position: relative;
@@ -53,9 +45,7 @@ h1{
 	padding-top: 10px;
 }
 
-
-
-.signin{
+.signin {
 	float: right;
 	color:white;
 	background-color:#3134cc;
@@ -86,7 +76,7 @@ nav ul{
 	flex: 2;
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 nav ul li a {
@@ -113,75 +103,6 @@ nav ul li a:hover:not(.active){
 	height: 400px;
 	position: relative;
 	top: -34px;
-}
-.content{
-	display: flex;
-	flex-direction: row;
-	display: inline-block;
-	margin-top: 100px;
-	position: relative;
-	top: -80px;
-	padding: 40px;
-}
-
-
-.members {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-	
-}
-
-
-.column {
-  flex: 33%;
-	max-width: 33%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 4px;
-  vertical-align: middle;
-}
-
-.img_hover {
-  position: relative;
-  width: 100%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.description {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 225px;
-  width: 225px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.img_hover:hover .description {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 footer{

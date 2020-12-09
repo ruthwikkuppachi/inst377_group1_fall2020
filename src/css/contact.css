@@ -1,38 +1,39 @@
-*{
-	padding:0;
+* {
+	padding: 0;
 	margin: 0;
 	text-decoration: none;
 	list-style: none;
 	box-sizing: border-box;
 }
 
-body{
+body {
 	font-family: montserrat;
 	overflow-x:hidden;
 	}
 
-nav{
+nav {
 	background: white;
 	height: 80px;
 	width: 100%;
 }
-Header{
+
+header {
 	display: flex;
   	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;  
+	flex-wrap: wrap; 
 	background: white;
 	color: black;
 	font: 15px sans-serif;
-	
+	justify-content: center;
+	align-content: center;
 	}
+
 .wrapper {
-	display: flex;
-			  
+	display: flex;	  
 	align-items: center;
 	}
-.logo-img{
 
+.logo-img {
 	float: left;
 	padding-top: 0px;
 	padding-left: 0px;
@@ -42,10 +43,17 @@ Header{
 	top: 5px;
 }
 
+h1{
+	
+	font-size: 30px;
+}
+
 .logo {
 	position: relative;
 	left: 10px;
 	top: 10px;
+	font-size: 35px;
+	padding-top: 10px;
 }
 
 
@@ -67,11 +75,11 @@ nav ul{
 	padding: 0;
 	overflow: hidden;
 	background-color: #3134cc;
+	flex: 2;
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
 }
-
-nav ul li{
-	float: left;
-		}
 
 nav ul li a {
 	display: block;
