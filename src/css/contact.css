@@ -33,7 +33,7 @@ header {
 	align-items: center;
 	}
 
-.logo-img {
+.logo {
 	float: left;
 	padding-top: 0px;
 	padding-left: 0px;
@@ -48,7 +48,7 @@ h1{
 	font-size: 30px;
 }
 
-.logo {
+.title {
 	position: relative;
 	left: 10px;
 	top: 10px;
@@ -69,6 +69,7 @@ h1{
 	top: -20px;
 	border-radius:12px;
 }
+
 nav ul{
 	list-style-type: none;
 	margin-top: 30px;

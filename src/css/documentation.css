@@ -33,7 +33,7 @@ header {
 	align-items: center;
 	}
 
-.logo-img{
+.logo {
 
 	float: left;
 	width: 6%;
@@ -42,7 +42,7 @@ header {
 	top: 5px;
 }
 
-.logo {
+.title {
 	position: relative;
 	left: 10px;
 	top: 10px;
@@ -96,9 +96,8 @@ nav ul li a:hover:not(.active){
 .active{
 	background-color: #111110
 }
+
 .content{
-	display: flex;
-	flex-direction: row;
 	display: inline-block;
 	margin-top: 100px;
 }
@@ -118,7 +117,7 @@ footer{
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-}*/
+}
 
 .fa:hover {
     opacity: 0.7;
@@ -136,4 +135,4 @@ footer{
 .fa-instagram {
   background: #C80288;
   color: white;
-}
+}*/
