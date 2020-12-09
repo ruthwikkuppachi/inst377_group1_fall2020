@@ -20,54 +20,27 @@ header {
 	color: black;
 	font: 15px sans-serif;
 	justify-content: center;
-	align-content: center;
-	}
-	
-.wrapper {
-	display: flex;
 	align-items: center;
-	}
-
-.logo-img{
-	float: left;
-	width: 6%;
-	height: 8%;	
-	position: relative;
-	top: 5px;
 }
 
 .logo {
+	float: left;
+	width: 10%;
+	height: 10%;	
+	position: relative;
+	top: 10px;
+}
+
+.title {
 	position: relative;
 	left: 10px;
 	top: 10px;
 	color: #010502;
-	font-size: 35px;
-	padding-top: 10px;
+	font-size: 10px;
+	font-size: 3vw;
 }
-
-.signin {
-	float: right;
-	color:white;
-	background-color:#3134cc;
-	font-size: 20px;
-	margin-right: 20px;
-	position: relative;
-	top: -20px;
-	border-radius:12px;
-}
-
-.topnav .search-container button {
-	float: right;
-	padding: 10px;
-	margin-top: 8px;
-	margin-right: 16px;
-	background: #ddd;
-	font-size: 17px;
-	border: none;
-	cursor: pointer;
-  }
   
-nav ul{
+nav ul {
 	list-style-type: none;
 	margin-top: 30px;
 	padding: 15px;
@@ -88,40 +61,10 @@ nav ul li a {
 	text-transform: uppercase;
 }
 
-nav ul li a:hover:not(.active){
+nav ul li a:hover:not(.active) {
 	background-color: #393b3a;
-	
 }
 
-.active{
+.active {
 	background-color: #0c0c0b
-}
-
-.home-img{
-
-	width: 100%;
-	height: 400px;
-	position: relative;
-	top: -34px;
-}
-
-footer{
-	padding: 10px;
-	margin-top: 20px;
-	color: white;
-	background-color:#3134cc;
-	text-align: center;
-}
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-.fa-instagram {
-  background: #C80288;
-  color: white;
 }
