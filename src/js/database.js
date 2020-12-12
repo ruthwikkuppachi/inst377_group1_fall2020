@@ -14,7 +14,8 @@ let db = new sqlite3.Database(DBSOURCE, (err) => {
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             payee text, 
             agency,
-            zip datetime
+            zip datetime,
+            amount INTEGER
             
             
             )`,

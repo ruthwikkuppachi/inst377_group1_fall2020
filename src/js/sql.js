@@ -2,21 +2,23 @@ let express = require('express')
 let router = express.Router()
 let db = require('../database');
 
+let pn = sessionStorage.getItem('Payee Name', name);
+let zc = sessionStorage.getItem('zip code', zip);
+let ag = sessionStorage.getItem('agency', agent);
+let am = sessionStorage.getItem('amount', amount);
+
+//input from user
+let zip_code = document.getElementsByTagName('input')[0];
+let name_payee = document.getElementsByTagName('input')[1];
+let agent = document.getElementsByTagName('input')[2];
+
 // Create a new task
 // POST localhost:<port>/task
-router.post('/task', (req, res) => {
-    // now we have access to req.body due to body-parser (see index.js)
-    if (!req.body) {
-        return resizeBy.status(400).send('Request body is missing')
-    }
+router.post('/results', (req, res) => {
+    var sql ='INSERT INTO results (zip, name, agency, amount) VALUES (?,?,?,?)'
 
-    let task = {
-        name: req.body.taskName,
-        dueDate: req.body.taskDueDate // Example 2020-11-24
-    }
-    
-    var sql ='INSERT INTO results (taskName, dueDate) VALUES (?,?)'
-    var params =[task.name, task.dueDate]
+
+    var params =[zip_code, name_payee, agent]
     db.run(sql, params, function (err, result) {
         if (err){
             res.status(400).json({"error": err.message})
@@ -32,12 +34,8 @@ router.post('/task', (req, res) => {
 })
 
 //GET
-router.get('/task', (req, res) => {
-    if (!req.query.taskId) {//TODO?
-        return res.status(400).send('Missing URL parameter id')
-    }
-    let sql = "select * from result where id = ?"
-    console.log("req.query.taskId: " + req.query.taskId)//Todo
+router.get('/results', (req, res) => {
+    let sql = "select * from results"
     let params = [req.query.taskId]//TODO
     db.get(sql, params, (err, row) => {
         if (err) {
@@ -51,44 +49,13 @@ router.get('/task', (req, res) => {
       });
 })
 
-//Update
-router.put('/task', (req, res) => {
-    console.log("PUT called")
-    var data = {
-        id : req.query.taskId,//TODO,
-        taskName: req.body.taskName//TODO
-        
-    }
-    console.log("data.id:" + data.id + " name:" + data.taskName)
-    if (!data.id) {
-        return res.status(400).send('Missing URL parameter id')
-    }
-    db.run(
-        `UPDATE tasklist set 
-           taskName = ? 
-           WHERE id = ?`,
-        [data.taskName, data.id],
-        function (err, result) {
-            if (err){
-                res.status(400).json({"error": res.message})
-                return;
-            }
-            res.json({
-                message: "success",
-                data: data,
-                changes: this.changes
-            })
-    });
-})
 
 //Delete
 //TODO add entire DELETE method
-router.delete('/task', (req, res) => {
-    if (!req.query.taskId) {
-        return res.status(400).send('Missing URL parameter taskId')
-    }
+router.delete('/results', (req, res) => {
+
     db.run(
-        'DELETE FROM results WHERE id = ?',
+        'DELETE * FROM results',
         req.query.taskId,
         function (err, result) {
             if (err){
