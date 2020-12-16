@@ -17,7 +17,7 @@ async function getData() {
             console.log(route);
             sessionStorage.setItem('Payee Name', name);
             sessionStorage.setItem('zip code', zip);
-            sessionStorage.setItem('agency', agent);
+            sessionStorage.setItem('agency', agency);
             sessionStorage.setItem('amount', amount);
             //turn json into sql with columns zip, name, amount, agency - Creates table with all 4 columns that can be queried
             //query for every row that zip/name/agency (whatever was inputed into the search bar)
