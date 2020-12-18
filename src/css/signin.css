@@ -1,34 +1,27 @@
-body
-* {
+body * {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-  
-
-    
 }
   
-.sign-up-form
-* {
+.sign-up-form * {
     width: 300px;
     height: 30px;
-    padding: 20px 40px;
     margin: 8% auto 0;
     text-align: center;
     border: none;
     color: black;
-    border-radius: 15px ; 
-   
-
+    border-radius: 15px; 
 }
-h1{  
+
+h1 {  
     text-align: center;  
     color: #171818;  
-    padding: 20px;  
-}  
-label{  
+} 
+
+label {
     color: #1a1b1b;  
-    font-size: 17px;  
+    font-size: 15px;
 }  
 
 input[type=email], input[type=password] {
@@ -38,10 +31,9 @@ input[type=email], input[type=password] {
     font-size: 15px;
     border: 1px solid rgb(5, 5, 5);
     box-sizing: border-box;
-  }
+}
 
-button 
-*{
+button  *{
     background-color: #6d6be6;
     color: rgb(5, 5, 5);
     padding: 12px 20px;
@@ -50,15 +42,18 @@ button
     border: none;
     cursor: pointer;
     width: 100%;
-    
   }
 
 
-span{  
+span {  
     color: white;  
     font-size: 17px;  
-}  
-a{  
+} 
+
+a {  
     float: left;  
     background-color: rgb(126, 173, 226);  
-}  
+} 
+.tos {
+    text-align: center;
+}

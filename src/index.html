@@ -19,13 +19,14 @@
     <li><a href="about.html">About</a></li>
     <li><a href="documentation.html">Documentation</a></li>
     <li><a href="contact.html">Contact Us</a></li>
-    
+    <li><a href="signin.html"><button type = "button" class = "signin"> Sign-in </button></a></li>
   </ul>
 </nav>
 <!-- Content -->
-<div id="chartContainer" style="height: 400px; width: 100%;">
-  <h1>Filter Prince George's County Spending Dataset</h1>
-  <p>*any search parameter can be left empty*</p> <br>
+<div id="chartContainer">
+  <h1>Filter Prince George's County Spending Dataset</h1><br>
+  <p>*any search parameter can be left empty*</p> <br><br>
+  <div class="content">
   <!--search bar for zip-->
   <label for="zip">Zip Code:</label>
   <input type="text" id="zip" name="zip code" /><br /><br />
@@ -45,6 +46,7 @@
 
 
   </ul>
+</div>
 </div>
 </body>
 <script src="js/api.js"></script>
