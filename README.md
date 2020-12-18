@@ -1,5 +1,15 @@
 # Prince Gorge's County Governement Spending
 
-Project Purpose: Government budget allocation is a complicated process of deciding how much is spent and where. The purpose of this application will be to reduce the complexity of the process so that both the government can analyse its spending and the average person can understand where the government spends its money. In addition, this application will provide transparency for the Prince George’s County government’s budget distribution. 
+**Project Purpose:** Government budget allocation is a complicated process of deciding how much is spent and where. The purpose of this application will be to reduce the complexity of the process so that both the government can analyse its spending and the average person can understand where the government spends its money. In addition, this application will provide transparency for the Prince George’s County government’s budget distribution. 
 
-Target Browsers: Safari, Goole Chrome, iOS, Android
+**Target Browsers:** 
+* Safari
+* Goole Chrome
+* iOS 
+* Android
+
+**User Manual:**
+
+
+**Developer Manual:**
+
