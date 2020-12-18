@@ -7,16 +7,16 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     <body>
-    
-        <div class="sign-up-form">
+        <div class="new-acc-form">
            <h1> Create New Account </h1> 
            <form>
             <input type="text" id="userName" placeholder="Your Username">
             <input type="text" id="password" placeholder="Your Password">
-            <button onclick="submitUser()" type="button" class="signin-btn">Sign in</button>
+            
             <label>
                 <input type="checkbox" checked="checked" name="agree"><span>I agree to the terms of service</span> 
-              </label>
+            </label><br><br>
+            <button onclick="submitUser()" type="button" class="newacc-btn">Create New Account</button>
         </form>
         <p id="postUserContent"></p>
         </div>
