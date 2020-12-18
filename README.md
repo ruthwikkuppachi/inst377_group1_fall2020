@@ -8,10 +8,11 @@
 * iOS 
 * Android
 
-**User Manual Link:**
+**Links:**
 
+[User Manual](https://github.com/ruthwikkuppachi/inst377_group1_fall2020/blob/main/USER.MD)
 
-**Developer Manual Link:**
+[Developer Manual](https://github.com/ruthwikkuppachi/inst377_group1_fall2020/blob/main/README.md)
 
 
 
