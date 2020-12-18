@@ -80,6 +80,7 @@ nav ul li a:hover:not(.active) {
 }
 
 #chartContainer {
+	padding-top: 20px;
 	height: 400px;
 	margin: 0 auto;
 	text-align: center;
