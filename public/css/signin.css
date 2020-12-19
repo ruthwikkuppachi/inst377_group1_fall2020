@@ -70,11 +70,11 @@ nav ul li a {
 nav ul li a:hover:not(.active) {
 	background-color: #393b3a;
 }
-
+  
 .signin {
 	float: right;
 	color: white;
-	background-color: rgb(8, 107, 49);
+	background-color: black;
 	font-size: 17px;
 	position: relative;
 	border-radius: 12px;
@@ -111,27 +111,21 @@ input[type=email], input[type=password] {
     box-sizing: border-box;
 }
 
-.login
-{
-    background-color: #716ff1;
+button 
+*{
+    background-color: #6d6be6;
     color: rgb(5, 5, 5);
     padding: 12px 20px;
     margin: 10px 0;
-	font-size: 15px;
-	text-align: center;
-	border: 1px solid rgb(5, 5, 5);
-    box-sizing: border-box;
+    font-size: 20px;
+    border: none;
     cursor: pointer;
     width: 100%;
     
   }
 
 
-.span {  
-    color: rgb(26, 22, 22);  
+span {  
+    color: white;  
     font-size: 15px;  
-} 
-
-button:hover { 
-	opacity: 0.8; 
 } 
