@@ -31,7 +31,9 @@ The data used was obtained from Prince George’s County open data portal, [Spen
 
 **Chosen Stratgies and Solutions**
 
-To create this application, we decided to allow the user the ability to filter by three different categories. This allows the user to be able to refine the displayed data. To do this, we 
+To create this application, we decided to allow the user the ability to filter by three different categories. This allows the user to be able to refine the displayed data. To do this, we first connected to the PG Count's API from where spending data was obtained. Then, we filtered the data (based on Agency Name, Zip Code, and Payee Name) coming from the API depending on the user's input. We stored this data in the local session storage and enabled users to see it immediately on the website. 
+
+We also have a simple username-password system that enables users to create an account on our website. We certainly wanted to implement a lot of features for user profile, but given the constraints that were faced by us in this difficult semester, we couldn't implement all of them. Nevertheless, this feature demonstrates the GET, POST, and PUT requests in HTTP. The GET request can be seen when a user gets a welcome message with their username stored in a database, when they enter the correct username and password. The POST request is shown when a new user wants to create an account on our website. When a user forgets their password, they can update the password on file in the database. This is the PUT request.
 
 **Technical System Decision Rationale**
 
