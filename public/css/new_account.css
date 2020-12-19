@@ -111,17 +111,19 @@ label{
 	
   }
 
-button 
-*{
-    background-color: #6d6be6;
+  .newacc-btn
+
+{
+    background-color: #716ff1;
     color: rgb(5, 5, 5);
     padding: 12px 20px;
     margin: 10px 0;
-    font-size: 20px;
-    border: none;
+	font-size: 15px;
+	text-align: center;
+	border: 1px solid rgb(5, 5, 5);
+    box-sizing: border-box;
     cursor: pointer;
     width: 100%;
-    
   }
 
 
