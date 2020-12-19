@@ -21,6 +21,7 @@ The problem we are attempting to solve deals with budget allocation within Princ
 * Android
 
 **Data**
+
 The API that we are working with for this project is on the government spending for the year of 2020 in PG County, we chose to use this API because we want to essentially create a tool that is useful for the county government as well as those who are a residence of the county, this tool will allow them to analyze the government spending across different agencies. 
 
 The data we will be using is Spending Information for FY 2020. This dataset describes Prince George’s County government’s spending for the 2020 fiscal year with columns such as zip code and agency.
@@ -30,13 +31,18 @@ The data used was obtained from Prince George’s County open data portal, [Spen
 
 **Chosen Stratgies and Solutions**
 
+To create this application, we decided to allow the user the ability to filter by three different categories. This allows the user to be able to refine the displayed data. To do this, we first connected to the PG Count's API from where spending data was obtained. Then, we filtered the data (based on Agency Name, Zip Code, and Payee Name) coming from the API depending on the user's input. We stored this data in the local session storage and enabled users to see it immediately on the website. 
+
+We also have a simple username-password system that enables users to create an account on our website. We certainly wanted to implement a lot of features for user profile, but given the constraints that were faced by us in this difficult semester, we couldn't implement all of them. Nevertheless, this feature demonstrates the GET, POST, and PUT requests in HTTP. The GET request can be seen when a user gets a welcome message with their username stored in a database, when they enter the correct username and password. The POST request is shown when a new user wants to create an account on our website. When a user forgets their password, they can update the password on file in the database. This is the PUT request.
+
 **Technical System Decision Rationale**
-
-
 
 Our solution helps address the problem at hand because it helps the user identify areas where there is too little and too much funding for a particular agency within PG County. In the perspective of a PG county goverment official they are able to adjust monetary funding for certain areas where it is needed more in comparison to other areas who are overly funded. 
 
 **Challenges Faced**
 
+The most challenging part of this project was probably in the backend, particularly with the API. We had some trouble deciding on how to approach connecting the Prince George's json file to the aplication. At first we were going to use express and sqlite3 to retrieve data from the api and store it in a sql file that could be queried. Instead of that, we decided to use session data to go through the api and display the filtered data. This method still filters the data, but it skips the process of creating a local database and querying it like it would have with sqlite3.
+
+**Possible future work**
 
 In the future for this system developers develop look into implementing instances data visualizations of the researched data, so that the users are able to get a better picture of budget allocation with the help of charts and graphs. Also hopefully in the future we could expand beyond PG County, it is a plan to eventually create a tool like this for all counties within theys state of Mayrland. 
