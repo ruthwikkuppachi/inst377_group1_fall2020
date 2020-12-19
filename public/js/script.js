@@ -61,7 +61,7 @@ function submitUser() {
             userName = user.data.userName;
             userId = user.data.id;
             password = user.data.password;
-            message = "ID: " + userId + "<br>UserName: " + userName + "<br> Password: " + password; 
+            message = "Welcome " + userName + "!"; 
           }
           let p = document.getElementById("password").value
           if(p != password){
