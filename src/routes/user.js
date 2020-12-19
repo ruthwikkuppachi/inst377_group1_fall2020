@@ -60,10 +60,11 @@ router.post('/user', async(req, res) => {
 })
 
 //GET
-router.get('/user', (req, res) => {
+router.get('/user', async(req, res) => {
     if (!req.query.userId) {
         return res.status(400).send('Missing URL parameter id')
     }
+
     let sql = "select * from users where id = ?"
     console.log("req.query.userId: " + req.query.userId)
     let params = [req.query.userId]
