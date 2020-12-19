@@ -81,7 +81,7 @@ nav ul li a:hover:not(.active) {
 	align-self: flex-end;
 }
   
-.sign-up-form * {
+.new-acc-form * {
     padding-top: 30px;
     width: 300px;
     height: 30px;
@@ -89,27 +89,26 @@ nav ul li a:hover:not(.active) {
     text-align: center;
     border: none;
     color: black;
-    border-radius: 15px; 
+    border-radius: 15px ; 
 }
 
-h1 {  
+h1{  
     text-align: center;  
-    color: #171818;  
-} 
-
-label {
+    color: #171818;
+}  
+label{  
     color: #1a1b1b;  
-    font-size: 15px;
+    font-size: 15px;  
 }  
 
-input[type=email], input[type=password] {
+#userName, #password {
     width: 100%;
     padding: 12px 10px;
     margin: 10px 0;
     font-size: 15px;
     border: 1px solid rgb(5, 5, 5);
     box-sizing: border-box;
-}
+  }
 
 button 
 *{
@@ -125,17 +124,7 @@ button
   }
 
 
-span {  
+span{  
     color: white;  
     font-size: 15px;  
-}
-
-.new_account {
-	position: absolute;
-	margin-top: 900px;
-	}
-
-.change_password {
-	position: absolute;
-	margin-top: 950px;
-	}
+}  
