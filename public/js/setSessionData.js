@@ -97,7 +97,7 @@ function getResources() {
           sum = route.sum("amount");
           
             string = JSON.stringify(route)
-            document.getElementById("total").innerHTML = "Total spending on " + resource1+ ":  $" + sum;
+            document.getElementById("total").innerHTML = "Total spending in " + resource1+ ":  $" + sum;
             document.getElementById("main").innerHTML = string;
             
           
@@ -161,7 +161,7 @@ function getResources() {
           sum = route.sum("amount");
           
             string = JSON.stringify(route)
-            document.getElementById("total").innerHTML = "Total spending on " + resource2+ ":  $" + sum;
+            document.getElementById("total").innerHTML = "Total spending to " + resource2+ ":  $" + sum;
             document.getElementById("main").innerHTML = string;
             
           
