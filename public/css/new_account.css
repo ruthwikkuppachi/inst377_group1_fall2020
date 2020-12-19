@@ -107,7 +107,8 @@ label{
     margin: 10px 0;
     font-size: 15px;
     border: 1px solid rgb(5, 5, 5);
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
   }
 
 button 
@@ -128,3 +129,9 @@ span{
     color: white;  
     font-size: 15px;  
 }  
+
+#postUserContent {
+	position: absolute;
+	margin-top: 250px;
+	font-size: large;
+}

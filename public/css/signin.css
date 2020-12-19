@@ -142,4 +142,5 @@ span {
 #getUserContent{
 	position: absolute;
 	margin-top: 350px;
+	font-size: large;
 }

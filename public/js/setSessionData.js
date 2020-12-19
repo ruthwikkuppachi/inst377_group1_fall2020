@@ -17,11 +17,11 @@ function getResources() {
             let payment_description = route.payment_description;
             let nothing = "Nothing Set!";
   
-            sessionStorage.setItem("title", payee_name);
-            sessionStorage.setItem("lat_max", agency);
-            sessionStorage.setItem("lat_min", zip_code);
-            sessionStorage.setItem("lon_max", amount);
-            sessionStorage.setItem("lon_min", payment_description);
+            sessionStorage.setItem("payee_name", payee_name);
+            sessionStorage.setItem("agency", agency);
+            sessionStorage.setItem("zip_code", zip_code);
+            sessionStorage.setItem("amount", amount);
+            sessionStorage.setItem("payment_description", payment_description);
 
             Array.prototype.sum = function (prop) {
               var total = 0
@@ -43,23 +43,23 @@ function getResources() {
         )
         .catch((err) => {
           console.log(err);
-          main.innerHTML = "Invalid bus route";
-          sessionStorage.setItem("title", nothing);
-          sessionStorage.setItem("lat_max", nothing);
-          sessionStorage.setItem("lat_min", nothing);
-          sessionStorage.setItem("lon_max", nothing);
-          sessionStorage.setItem("lon_min", nothing);
+          main.innerHTML = "Invalid value for agency";
+          sessionStorage.setItem("payee_name", nothing);
+          sessionStorage.setItem("agency", nothing);
+          sessionStorage.setItem("zip_code", nothing);
+          sessionStorage.setItem("amount", nothing);
+          sessionStorage.setItem("payment_description", nothing);
         
 
         }
         );
     } else {
       main.innerHTML = "No value provided";
-      sessionStorage.setItem("title", nothing);
-      sessionStorage.setItem("lat_max", nothing);
-      sessionStorage.setItem("lat_min", nothing);
-      sessionStorage.setItem("lon_max", nothing);
-      sessionStorage.setItem("lon_min", nothing);
+      sessionStorage.setItem("payee_name", nothing);
+      sessionStorage.setItem("agency", nothing);
+      sessionStorage.setItem("zip_code", nothing);
+      sessionStorage.setItem("amount", nothing);
+      sessionStorage.setItem("payment_description", nothing);
     }
     
   }

@@ -105,7 +105,7 @@ function submitUser() {
           password = user.data.password;
           userName = user.data.userName;
           
-          message = "userName: " + userName + " <br>password: " + password; 
+          message = "Password Updated! " + "userName: " + userName + " <br>password: " + password; 
         }
         document.getElementById("updatedUserContent").innerHTML = message;
     })

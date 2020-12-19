@@ -81,13 +81,14 @@ router.get('/user', async(req, res) => {
 })
 
 //Update
-router.put('/user', (req, res) => {
+router.put('/user', async(req, res) => {
   console.log("PUT called")
   var data = {
       userName : req.query.userName,
       password : req.body.password
       
   }
+
   console.log("data.userName:" + data.userName + "password:" + data.password)
   if (!data.userName) {
       return res.status(400).send('Missing URL parameter id')
