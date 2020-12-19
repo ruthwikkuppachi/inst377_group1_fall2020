@@ -42,7 +42,8 @@ function submitUser() {
   function getUser() {
       console.log("Called getUser");
       
-      let userIdParam = document.getElementById("userId").value;
+      let userIdParam = document.getElementById("id").value;
+      console.log(userIdParam)
       console.log("UserId:" + userIdParam);
       let userURL = "http://localhost:4000/user?userId=" + userIdParam;
       const fetchPromise = fetch(userURL);
@@ -61,6 +62,10 @@ function submitUser() {
             userId = user.data.id;
             password = user.data.password;
             message = "ID: " + userId + "<br>UserName: " + userName + "<br> Password: " + password; 
+          }
+          let p = document.getElementById("password").value
+          if(p != password){
+             message = "Incorrect Password"
           }
           document.getElementById("getUserContent").innerHTML = message;
       })

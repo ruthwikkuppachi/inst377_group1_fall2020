@@ -102,7 +102,7 @@ label {
     font-size: 15px;
 }  
 
-input[type=email], input[type=password] {
+#id, #password {
     width: 100%;
     padding: 12px 10px;
     margin: 10px 0;

@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Sign Up Form</title>
+  <script defer src="js/script.js"></script>
 <link rel="stylesheet" type="text/css" href="css/signin.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -24,13 +25,14 @@
         <div class="sign-up-form">
            <h1> Sign In </h1> 
            <form>
-            <input type="email" class="input" placeholder="Your Email">
-            <input type="password" class="input" placeholder="Your Password">
+            <input type="text" id="id" placeholder="Your ID">
+            <input type="text" id="password" placeholder="Your Password">
             <label>
                 <input type="checkbox" checked="checked" class = "tos" name="agree"><span>I agree to the terms of service</span>
             </label><br><br>
-            <button type="button" id="signin-btn">Sign In</button>
+            <button onclick = "getUser()", type="button" id="signin-btn">Sign In</button>
         </form>
+        <p id="getUserContent"></p>
         </div>
         <div class ="new_account">
         <a href = "new_account.html">Create a New Account</a>
