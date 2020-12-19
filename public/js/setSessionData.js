@@ -23,8 +23,21 @@ function getResources() {
             sessionStorage.setItem("lon_max", amount);
             sessionStorage.setItem("lon_min", payment_description);
 
+            Array.prototype.sum = function (prop) {
+              var total = 0
+              for ( var i = 0, _len = this.length; i < _len; i++ ) {
+                  total += parseFloat(this[i][prop])
+              }
+              return total
+          }
+
+          sum = route.sum("amount");
+          
             string = JSON.stringify(route)
+            document.getElementById("total").innerHTML = "Total spending on " + resource+ ":  $" + sum;
             document.getElementById("main").innerHTML = string;
+            
+          
             
           }
         )
