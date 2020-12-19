@@ -88,7 +88,42 @@ nav ul li a:hover:not(.active){
 .active{
 	background-color: #0c0c0b
 }
+/* Profile Images */
+.column2{
+	width:25%;
+	float: left;
+	padding:8px 10px;
+}
 
+.row::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+@media screen and (max-width:600px)
+{
+	.column{
+		width:100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+.profileCard{
+	box-shadwo: 0 4px 8px 0 rgba(0,0,0,0.2);
+	max-width: 300px;
+	margin: auto;
+	background-color: white;
+	text-align:center;
+	border-radius:40px;
+	padding-bottom:15px;
+}
+
+.title{
+	color:gray;
+	font-size:18px;
+}
 /* Card Information */
 section{
 	padding: 1rem 0;
