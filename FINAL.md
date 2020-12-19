@@ -33,10 +33,10 @@ The data used was obtained from Prince George’s County open data portal, [Spen
 **Technical System Decision Rationale**
 
 
-
+**How Does Our System Address the Problem**
 Our solution helps address the problem at hand because it helps the user identify areas where there is too little and too much funding for a particular agency within PG County. In the perspective of a PG county goverment official they are able to adjust monetary funding for certain areas where it is needed more in comparison to other areas who are overly funded. 
 
 **Challenges Faced**
 
-
+**Possible Future Work**
 In the future for this system developers develop look into implementing instances data visualizations of the researched data, so that the users are able to get a better picture of budget allocation with the help of charts and graphs. Also hopefully in the future we could expand beyond PG County, it is a plan to eventually create a tool like this for all counties within theys state of Mayrland. 
