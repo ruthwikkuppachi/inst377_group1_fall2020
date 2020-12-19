@@ -43,7 +43,7 @@ function getResources() {
         )
         .catch((err) => {
           console.log(err);
-          main.innerHTML = "Invalid bus route";
+          main.innerHTML = "Invalid input";
           sessionStorage.setItem("title", nothing);
           sessionStorage.setItem("lat_max", nothing);
           sessionStorage.setItem("lat_min", nothing);

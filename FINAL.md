@@ -30,13 +30,16 @@ The data used was obtained from Prince George’s County open data portal, [Spen
 
 **Chosen Stratgies and Solutions**
 
+To create this application, we decided to allow the user the ability to filter by three different categories. This allows the user to be able to refine the displayed data. To do this, we 
+
 **Technical System Decision Rationale**
-
-
 
 Our solution helps address the problem at hand because it helps the user identify areas where there is too little and too much funding for a particular agency within PG County. In the perspective of a PG county goverment official they are able to adjust monetary funding for certain areas where it is needed more in comparison to other areas who are overly funded. 
 
 **Challenges Faced**
 
+The most challenging part of this project was probably in the backend, particularly with the API. We had some trouble deciding on how to approach connecting the Prince George's json file to the aplication. At first we were going to use express and sqlite3 to retrieve data from the api and store it in a sql file that could be queried. Instead of that, we decided to use session data to go through the api and display the filtered data. This method still filters the data, but it skips the process of creating a local database and querying it like it would have with sqlite3.
+
+**Possible future work**
 
 In the future for this system developers develop look into implementing instances data visualizations of the researched data, so that the users are able to get a better picture of budget allocation with the help of charts and graphs. Also hopefully in the future we could expand beyond PG County, it is a plan to eventually create a tool like this for all counties within theys state of Mayrland. 
