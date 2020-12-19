@@ -34,6 +34,7 @@ The data used was obtained from Prince George’s County open data portal, [Spen
 
 
 **How Does Our System Address the Problem**
+
 Our solution helps address the problem at hand because it helps the user identify areas where there is too little and too much funding for a particular agency within PG County. In the perspective of a PG county goverment official they are able to adjust monetary funding for certain areas where it is needed more in comparison to other areas who are overly funded. 
 
 **Challenges Faced**
