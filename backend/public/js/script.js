@@ -42,8 +42,7 @@ function submitUser() {
   function getUser() {
       console.log("Called getUser");
       
-      let userIdParam = document.getElementById("id").value;
-      console.log(userIdParam)
+      let userIdParam = document.getElementById("userId").value;
       console.log("UserId:" + userIdParam);
       let userURL = "http://localhost:4000/user?userId=" + userIdParam;
       const fetchPromise = fetch(userURL);
@@ -61,11 +60,7 @@ function submitUser() {
             userName = user.data.userName;
             userId = user.data.id;
             password = user.data.password;
-            message = "Welcome " + userName + "!"; 
-          }
-          let p = document.getElementById("password").value
-          if(p != password){
-             message = "Incorrect Password"
+            message = "ID: " + userId + "<br>UserName: " + userName + "<br> Password: " + password; 
           }
           document.getElementById("getUserContent").innerHTML = message;
       })
@@ -105,7 +100,7 @@ function submitUser() {
           password = user.data.password;
           userName = user.data.userName;
           
-          message = "Password Updated! " + "userName: " + userName + " <br>password: " + password; 
+          message = "userName: " + userName + " <br>password: " + password; 
         }
         document.getElementById("updatedUserContent").innerHTML = message;
     })
