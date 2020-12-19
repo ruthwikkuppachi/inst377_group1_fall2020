@@ -21,6 +21,7 @@ The problem we are attempting to solve deals with budget allocation within Princ
 * Android
 
 **Data**
+
 The API that we are working with for this project is on the government spending for the year of 2020 in PG County, we chose to use this API because we want to essentially create a tool that is useful for the county government as well as those who are a residence of the county, this tool will allow them to analyze the government spending across different agencies. 
 
 The data we will be using is Spending Information for FY 2020. This dataset describes Prince George’s County government’s spending for the 2020 fiscal year with columns such as zip code and agency.
@@ -40,4 +41,5 @@ Our solution helps address the problem at hand because it helps the user identif
 **Challenges Faced**
 
 **Possible Future Work**
+
 In the future for this system developers develop look into implementing instances data visualizations of the researched data, so that the users are able to get a better picture of budget allocation with the help of charts and graphs. Also hopefully in the future we could expand beyond PG County, it is a plan to eventually create a tool like this for all counties within theys state of Mayrland. 
