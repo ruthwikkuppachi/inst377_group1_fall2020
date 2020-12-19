@@ -7,7 +7,7 @@ This is a useful tool for those who are employeed by the are the PG county gover
 ## Guide ##
 In order to allocate funds on government spending in PG County the user must enter valid creditals in the search fields on the home page. There are three empty search fields involving a Zip Code, Government Agency, and Payee Name. Entering credentials for all three fields will present the user with the running total of what a certain government agency paid to an organization within a certain area of PG County.
 
-#### Example:###
+#### Example: ###
 **Zip Code:** 20785
 **Payee Name:** UNIFIRST
 **Agency:** CENTRAL SERVICES
@@ -18,7 +18,7 @@ Total spending on CENTRAL SERVICES: $3712083.150000003
 
 *Note that the Payee Name and Agency fields have creditials in an all uppercase format, if those fields have any lower case lettering it will display funding of $0.
 
-### Example:###
+### Example: ###
 **Zip Code:** 20785
 **Payee Name:** unifirst
 **Agency:** central services
