@@ -1,18 +1,16 @@
-
+// POST request
 function submitUser() {
     console.log("Called submitUser");
-    
+    // Submitting a new username and password
     let userNameParam = document.getElementById("userName").value;
     let userPassword = document.getElementById("password").value;
     console.log("userName:" + userNameParam);
     console.log("userPassword:" + userPassword);
     data = {'password':userPassword, 'userName':userNameParam};
-  
     console.log(JSON.stringify(data))
     let userURL = "http://localhost:4000/user";
     const fetchPromise = fetch(userURL,{ method:'POST', headers: {
         'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
       }, body: JSON.stringify(data)});
   
     fetchPromise
@@ -89,7 +87,6 @@ function submitUser() {
     let userURL = "http://localhost:4000/user?userName=" + userNameParam;
     const fetchPromise = fetch(userURL,{ method:'PUT', headers: {
         'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
       }, body: JSON.stringify(data)});
   
     fetchPromise

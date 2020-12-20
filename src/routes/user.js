@@ -2,19 +2,17 @@ let express = require('express')
 let router = express.Router()
 let db = require('../database');
 
-// Create a new task
-// POST localhost:<port>/task
+// Create a new user
 router.post('/user', async(req, res) => {
-    // now we have access to req.body due to body-parser (see index.js)
     if (!req.body) {
         return resizeBy.status(400).send('Request body is missing')
     }
 
     let user = {
         name: req.body.userName,
-        password: req.body.password // Example 2020-11-24
+        password: req.body.password 
     }
-    // First make sure that a record doesn't already exist
+    // Checking if a username already exists
   let checkIfExistSql = "select * from users where userName = ?"
   console.log("req.body.userName: " + req.body.userName)
   let params1 = [req.body.userName]
