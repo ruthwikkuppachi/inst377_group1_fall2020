@@ -102,6 +102,7 @@ label {
     font-size: 15px;
 }  
 
+
 #id, #password {
     width: 100%;
     padding: 12px 10px;
@@ -111,15 +112,18 @@ label {
     box-sizing: border-box;
 }
 
-button 
-*{
+#signin-btn
+{
     background-color: #6d6be6;
     color: rgb(5, 5, 5);
     padding: 12px 20px;
     margin: 10px 0;
-    font-size: 20px;
+    font-size: 15px;
     border: none;
-    cursor: pointer;
+	cursor: pointer;
+	border: 1px solid rgb(5, 5, 5);
+    box-sizing: border-box;
+}
 	width: 100%;
     }
 
